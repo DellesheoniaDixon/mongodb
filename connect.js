@@ -8,7 +8,7 @@ const client = new MongoClient(uri);
 async function run() {
   try {
     const database = client.db('ddixonmdb');
-    const parts = database.collection('class_example');
+    const parts = database.collection('class_examples');
 
     // Query for a part that has partID '12345'
     const query = { partID: '12345' };
